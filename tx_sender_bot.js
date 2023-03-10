@@ -1,5 +1,3 @@
-// https://goerli.infura.io/v3/ef552e15a99640269292b3ec67869520 // goerli testnet project rpc with my projectid
-
 const Web3 = require("web3");
 require("dotenv").config();
 
