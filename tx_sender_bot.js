@@ -42,13 +42,12 @@ const countTimes = 13;
 // Define function to send transaction
 async function sendTransaction() {
   try {
-    const nonce = await web3.eth.getTransactionCount(account, "pending");
-    console.log("Transaction count", nonce);
     // Create transaction object
     let txObject;
+    let nonce;
 
     for (let i = 0; i <= countTimes; i++) {
-      const nonce = await web3.eth.getTransactionCount(account, "pending");
+      nonce = await web3.eth.getTransactionCount(account, "pending");
       console.log("Transaction count", nonce);
       txObject = txObject = {
         from: account,
