@@ -41,8 +41,7 @@ const countTimes = 13;
 async function sendTransaction() {
   try {
     // Create transaction object
-    let txObject;
-    let nonce;
+    let txObject, nonce;
 
     for (let i = 0; i <= countTimes; i++) {
       nonce = await web3.eth.getTransactionCount(account, "pending");
